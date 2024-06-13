@@ -1,0 +1,61 @@
+Radcliffe Meteorological Station Oxford
+
+Online daily meteorological record dataset - updated to Dec 2023
+
+This file contains daily data for the elements listed below, from the first date of record (blank cells denote missing data, mostly prior to start of record period).
+
+TEMPERATURE
+Daily maximum and minimum temperatures are available from April 1815; estimates have been made to cover minor periods of missing data. Monthly, seasonal and annual temperature means are available from December 1813. Until 1849, the thermometers were exposed on a north wall; since August 1849, they have been exposed in a thermometer screen, of the Stevenson type since December 1878. Daily grass minimum temperatures are available from December 1930.
+
+Records prior to 1972 have been converted to degrees Celsius (rounded to one decimal place) from degrees Fahrenheit: some original values are given only to 1 degF resolution. Dates with missing data are left blank.
+Note that, for records prior to 1925, the monthly mean temperature may differ slightly from the mean of the daily values, or previously published data, owing to the inclusion of minor corrections for exposure and terminal hour variations prior to that date.
+
+Between October 2017 and February 2020, and from January 2023 to date, maximum temperatures are from the Met Office Vaisala HMT333 logger within the Stevenson screen. A calibrated mercury maximum thermometer was reinstalled in the Stevenson screen adjacent to the logger sensor in February 2020 and until December 2022 inclusive the maximum temperatures in this table were taken from the mercury maximum thermometer, owing to doubts regarding the validity of readings from the Vaisala logger. From January 2023 onwards, maximum temperature records are again taken from (a replacement) Vaisala logger in the Stevenson screen. Daily maximum temperatures recorded by the Vasiala logger averaged 0.2-0.3 degC cooler than the mercury maximum thermometer over the period of valid overlapping record. Minimum and grass minimum temperatures are from standard alcohol-based minimum thermometers throughout.
+
+Full details on the source and derivation of the records, thermometer exposures, times of observations, corrections applied etc to 2019 are given in Oxford Weather and Climate since 1767, Appendix 1.
+
+PRECIPITATION
+Monthly rainfall totals are available for sites in Oxford from 1767, including partial records from the Radcliffe Observatory site from 1772; daily records are available from 1827, although some caution needs to be exercised with regard to these until 1853, as some may represent multi-day accumulations. Estimates have been made to cover minor periods of missing data. Records may differ slightly from previously published data owing to inclusion of new information or corrections.
+Records prior to 1972 have been converted to millimetres (rounded to one decimal place) from inches: there may be minor differences between the sum of daily values and the monthly total owing to cumulative rounding errors.
+
+Note that there are two entries for daily rainfall. One includes 'traces' (< 0.1 mm precipitation), the other excludes these. When analysing or summing daily precipitation, it is advisable to use the 'No traces' entry, as the text entry of 'tr' in the first column can otherwise result in arithmetic errors.
+
+Full details on the source and derivation of the records, raingauge exposures, times of observations etc are given in Oxford Weather and Climate since 1767, Appendix 1.
+
+SUNSHINE
+Monthly sunshine duration totals are available from February 1880; daily records have been digitised back to 1921, and will eventually include the entire record. Estimates have been made to cover minor periods of missing data. 
+Records are given in hours and tenths (rounded where necessary to one decimal place): there may be minor differences between the sum of daily values and the monthly total owing to cumulative rounding errors. Records may differ slightly from previously published data owing to inclusion of new information or corrections.
+
+Full details on the source and derivation of the records, sunshine recorder exposure, times of observations etc are given in Oxford Weather and Climate since 1767, Appendix 1.
+
+Dataset may be subject to changes, and will be updated periodically with current data.
+
+If you use these datasets in publications, please cite the source as:
+
+Oxford Weather and Climate since 1767 by Stephen Burt and Tim Burt, published by Oxford University Press, 2019. Updated to 2023 from SOGE website.
+
+Please let us know < email to rms@ouce.ox.ac.uk > should you find any errors in these datasets.
+
+DATASET DOCUMENTATION
+YYYY - Year (four digits). First record 1 Jan 1815
+MM - Month (two digits). First record 1 Jan 1815
+DD - Date (two digits). First record 1 Jan 1815
+Tmax  C - Daily maximum temperature. Units degrees Celsius and tenths. First record 1 Jan 1815
+Tmin  C - Daily minimum temperature. Units degrees Celsius and tenths. First record 1 Jan 1815
+Daily Tmean  C - Daily mean temperature, derived from the average of the day's maximum and minimum temperatures. Units degrees Celsius and tenths. First record 1 Jan 1815
+Daily range degC - Daily range in temperature, derived from maximum minus minimum temperature. Units degrees Celsius and tenths. First record 1 Jan 1815	
+Grass min  C  - Daily grass minimum temperature. Units degrees Celsius and tenths. First record 1 Dec 1930 (earlier records exist, awaiting digitisation)
+Air frost 0/1 - Binary flag for air frost, 1 when the day's minimum temperature is below 0 degrees Celsius (note, excludes 0.0 degrees Celsius), else 0. First record 1 Jan 1815
+Ground frost 0/1 - Binary flag for ground frost, 1 when the day's grass minimum temperature is below 0 degrees Celsius (note, excludes 0.0 degrees Celsius), else 0. First record 1 Dec 1930 (earlier records exist, awaiting digitisation)
+Max >= 25.0 C - Binary flag for 'hot day', 1 when the day's maximum temperature is at or above 25.0 degrees Celsius, else 0. First record 1 Jan 1815
+Max >= 30.0 C - Binary flag for 'heatwave day', 1 when the day's maximum temperature is at or above 30.0 degrees Celsius, else 0. First record 1 Jan 1815
+Min >= 15.0  C - Binary flag for 'warm night', 1 when the day's minimum temperature is at or above 15.0 degrees Celsius, else 0. First record 1 Jan 1815
+Max < 0  C - Binary flag for 'ice day', 1 when the day's maximum temperature is below 0 degrees Celsius, (note, excludes 0.0 degrees Celsius ), else 0. First record 1 Jan 1815	
+Rainfall mm raw including traces - daily precipitation total, mm and tenths, including 'trace' entries where entered. Includes melted snowfall, at least from 1853. Note that for the majority of the record, traces were not digitised and their absence from the record in this column should not be taken to assume they did not occur. For statistical operations it is preferable to use the following column which excludes traces, as text entries can result in errors in statistical operations performed on the data. First record 1 Jan 1827	
+Rainfall mm 1 dpl no traces - daily precipitation total, mm and tenths: any 'trace' entries set to zero. Includes melted snowfall, at least from 1853. For statistical operations it is advisable to use this column (i.e. excluding traces), as text entries can result in errors in statistical operations performed on the data. First record 1 Jan 1827	
+Rain day (0.2 mm or more) - Binary flag for 'rain day', 1 when the day's rainfall is 0.2 mm or more, else 0. First record 1 Jan 1827. There remains some doubt as to whether rainfall was measured every day prior to 1853, and some 'daily' values prior to this may be multi-day accumulations (and thus the number of rain days will be lower than actual)	
+Wet day (1.0 mm or more) - Binary flag for 'wet day', 1 when the day's rainfall is 1.0 mm or more, else 0. First record 1 Jan 1827. There remains some doubt as to whether rainfall was measured every day prior to 1853, and some 'daily' values prior to this may be multi-day accumulations (and thus the number of wet days will be lower than actual)
+Sunshine duration h - Daily sunshine duration. Units hours and tenths. First record 1 Jan 1921 (earlier records exist, awaiting digitisation)
+Nil sunshine - Binary flag for 'sunless day', 1 when the day's sunshine duration is zero, else 0. First record 1 Jan 1921 (earlier records exist, awaiting digitisation)
+12 h sunshine - Binary flag for 'sunny day', 1 when the day's sunshine duration is 12.0 hours or more, else 0. First record 1 Jan 1921 (earlier records exist, awaiting digitisation)
+
